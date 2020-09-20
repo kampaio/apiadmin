@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "id": "integer",
+    "first_name": "string",
+    "last_name": "string",
+    "email": "email",
+    "password": "password",
+    "created_at": "date-time",
+    "updated_at": "date-time",
+  },
+
+  "api_provider": "key",
+
+  "global": {
+    "validations": [],
+    "configs": []
+  },
+
+  "config": [
+    {
+      "type": "list",
+      "method": "get",
+      "endpoint": "",
+      "options": [],
+      "validations": [],
+      "configs": [
+
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Menu 01",
+    "resource": "blablabla/blablabla",
+    "icon": "icon-url",
+    "scopes": ["admin", "users", "public"]
+  },
+  {
+    "title": "Menu 02",
+    "resource": "blablabla/{id}/blablabla",
+    "icon": "icon-url",
+    "scopes": ["admin", "users", "public"]
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "id": "integer",
+    "agency": "object",
+    "name": "string",
+    "created_at": "date-time",
+    "updated_at": "date-time",
+  },
+  
+  "relationships": [
+    {
+      "agency": {
+        "value": "#id #name"
+      }
+    }
+  ],
+
+  "api_provider": "key",
+
+  "global": {
+    "validations": [],
+    "configs": []
+  },
+
+  "actions": [
+    {
+      "type": "list",
+      "method": "get",
+      "endpoint": "",
+      "options": [],
+      "validations": [],
+      "configs": [
+
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "primary": "id",
+
+  "properties": {
+    "id": "integer",
+    "agency_id": "integer",
+    "name": "string",
+    "created_at": "date-time",
+    "updated_at": "date-time"
+  },
+
+  "relationships": [
+    {
+      "agency_id": {
+        "schema": "agency",
+        "value": "name",
+        "actions": [
+          {
+            "action": "list // USED FOR CREATE AND UPDATE WHEN IS SELECTABLE",
+            "deffer": false
+          },
+          {
+            "action": "show // USED FOR LIST OF ACCOUNTS",
+            "deffer": true,
+            "deffer_filter": "whereIn"
+          }
+        ]
+      }
+    }
+  ],
+
+  "api_provider": "key",
+
+  "global": {
+    "validations": [],
+    "configs": []
+  },
+
+  "actions": [
+    {
+      "type": "list",
+      "method": "GET",
+      "endpoint": "",
+      "fields": [
+        "id",
+        "agency_id",
+        "name"
+      ],
+      "options": [],
+      "filters": [
+      ],
+      "configs": {
+        "sort_by":  "column",
+        "sort_columns": ["id", "agency_id"]
+      }
+    },
+    {
+      "type": "create",
+      "method": "POST",
+      "endpoint": "/",
+      "fields": [
+        {
+          "field": "agency_id",
+          "placeholder": "Select agency",
+          "type": "select",
+          "validation": ["required", "integer"]
+        },
+        {
+          "field": "name",
+          "placeholder": "Type your name",
+          "validations": ["required", "max:250", "min:5"]
+        }
+      ],
+      "options": [
+
+      ]
+    },
+    {
+      "type": "show",
+      "method": "GET",
+      "endpoint": "/",
+      "fields": [
+        {
+          "field": "agency_id",
+          "type": "text"
+        },
+        {
+          "field": "name",
+          "type": "text"
+        },
+        {
+          "field": "created_at",
+          "type": "date-time"
+        },
+        {
+          "field": "updated_at"
+        }
+      ],
+      "options": [
+
+      ]
+    },
+    {
+      "type": "update",
+      "method": "PATCH",
+      "endpoint": "/",
+      "fields": [
+        {
+          "field": "agency_id",
+          "type": "disabled"
+        },
+        {
+          "field": "name",
+          "placeholder": "Type your name",
+          "validations": ["required", "max:250", "min:5"]
+        }
+      ],
+      "options": [
+
+      ]
+    },
+    {
+      "type": "delete",
+      "method": "DELETE",
+      "endpoint": "/"
+    }
+  ]
+}
