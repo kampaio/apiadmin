@@ -11,17 +11,15 @@ class ApiAdminManager
 {
     private Request $request;
 
-    private Client $client;
 
-    public function __construct(Request $request, Client $client)
+    public function __construct(Request $request)
     {
         $this->request = $request;
-        $this->client = $client;
     }
 
     public function make(string $path)
     {
-        $pathFile = __DIR__ . '/../../configs/menu.json';
+        $pathFile = __DIR__ . '/../../configs/routes.json';
 
         if (!File::exists($pathFile)) {
             throw new \Exception("Invalid File");

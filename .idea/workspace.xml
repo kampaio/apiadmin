@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b99be5b-adc1-43ca-8f29-b7cda3601ac5" name="Default Changelist" comment="" />
+    <list default="true" id="4b99be5b-adc1-43ca-8f29-b7cda3601ac5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/configs/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/components/filters/filter.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/components/menu/menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/components/menu/menuItem.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/components/messages.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/default/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/default/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/default/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/default/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/default/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/resources/views/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/errors.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/adapters/errors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/pagination.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/adapters/pagination.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/adapters/parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/apis-provider.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/apis-provider.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/default.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/apiadmin/ApiAdminManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/apiadmin/ApiAdminManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/account.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/schemas/account.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/accountWithAgencyObject.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/schemas/accountWithAgencyObject.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/agency.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/schemas/agency.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/schemas/users.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +53,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -135,14 +181,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/schemas" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/configs" />
       <recent name="$PROJECT_DIR$/core" />
       <recent name="$PROJECT_DIR$/laravel" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/apiadmin-configs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/schemas" />
     </key>
   </component>
   <component name="RunManager">
@@ -161,12 +208,29 @@
       <updated>1600290448387</updated>
       <workItem from="1600290449439" duration="6211000" />
       <workItem from="1600350710528" duration="3440000" />
-      <workItem from="1600543723409" duration="6655000" />
+      <workItem from="1600543723409" duration="7149000" />
+      <workItem from="1600674487845" duration="27000" />
+      <workItem from="1600808779335" duration="525000" />
+      <workItem from="1600957773704" duration="262000" />
+      <workItem from="1600973263404" duration="4039000" />
+      <workItem from="1601063138551" duration="337000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="573" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600299904520">
@@ -185,13 +249,15 @@
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state x="559" y="248" key="NewPhpClassDialog/-1920.23.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1600294213224" />
-    <state x="659" y="445" key="NewPhpFileDialog" timestamp="1600547379413">
-      <screen x="0" y="23" width="1680" height="984" />
+    <state x="-1167" y="476" key="NewPhpFileDialog" timestamp="1600977191175">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state x="-1167" y="476" key="NewPhpFileDialog/-1920.23.1920.1057/0.23.1680.984@-1920.23.1920.1057" timestamp="1600977191175" />
     <state x="659" y="445" key="NewPhpFileDialog/-1920.23.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1600547379413" />
-    <state x="505" y="240" width="670" height="676" key="search.everywhere.popup" timestamp="1600548965469">
-      <screen x="0" y="23" width="1680" height="984" />
+    <state x="-1343" y="256" width="766" height="727" key="search.everywhere.popup" timestamp="1600976414996">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state x="-1343" y="256" width="766" height="727" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1680.984@-1920.23.1920.1057" timestamp="1600976414996" />
     <state x="505" y="240" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1600548965469" />
   </component>
 </project>

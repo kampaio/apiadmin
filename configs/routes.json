@@ -1,0 +1,17 @@
+[
+  {
+    "type": "resource",
+    "uri": "/accounts",
+    "schemas": "account"
+  },
+  {
+    "type": "resource",
+    "uri": "/accounts/{account}/users/{user}",
+    "schemas": "users"
+  },
+  {
+    "type": "resource",
+    "uri": "/accounts/{account}/users/{user}/library",
+    "schemas": "usersLibrary"
+  }
+]

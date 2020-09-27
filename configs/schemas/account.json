@@ -1,4 +1,7 @@
 {
+  "api_provider": "account",
+  "api_resource": "/accounts",
+
   "primary": "id",
 
   "properties": {
@@ -29,35 +32,76 @@
     }
   ],
 
-  "api_provider": "key",
-
   "global": {
     "validations": [],
     "configs": []
   },
 
-  "actions": [
+  "views" : [
     {
       "type": "list",
-      "method": "GET",
-      "endpoint": "",
+      "api_method": "GET",
+      "api_endpoint": "http://accounts:1930/api/accounts",
       "fields": [
-        "id",
-        "agency_id",
-        "name"
-      ],
-      "options": [],
-      "filters": [
+        {
+          "field": "agency_id",
+          "label": "Agency",
+          "sortable" : true
+        },
+        {
+          "field": "name",
+          "label": "Name",
+          "sortable" : false
+        },
+        {
+          "field": "created_at",
+          "label": "Created At",
+          "sortable" : false,
+          "formatter": "DateTime"
+        },
+        {
+          "field": "updated_at",
+          "label": "Updated At",
+          "sortable" : false,
+          "formatter": "DateTime"
+        }
       ],
       "configs": {
-        "sort_by":  "column",
-        "sort_columns": ["id", "agency_id"]
-      }
+        "sort_parameter":  "column"
+      },
+      "actions": [
+        {
+          "type": "batch",
+          "action": "TO-DO"
+        },
+        {
+          "type": "item",
+          "action": "TO-DO"
+        },
+        {
+          "type": "header",
+          "action": "TO-DO"
+        }
+      ],
+      "filters": [
+        {
+          "field": "agency_id",
+          "label": "Agency",
+          "api_parameter": "agency_id",
+          "list": "url para listagem # PENSAR NISSO"
+        }
+      ],
+      "fixed_filters": [
+        {
+          "api_parameter": "with_trashed",
+          "default_value": true
+        }
+      ]
     },
     {
       "type": "create",
-      "method": "POST",
-      "endpoint": "/",
+      "api_method": "GET",
+      "api_endpoint": "http://accounts:1930/api/accounts",
       "fields": [
         {
           "field": "agency_id",
@@ -77,8 +121,8 @@
     },
     {
       "type": "show",
-      "method": "GET",
-      "endpoint": "/",
+      "api_method": "GET",
+      "api_endpoint": "http://accounts:1930/api/accounts/{id}",
       "fields": [
         {
           "field": "agency_id",
@@ -101,9 +145,9 @@
       ]
     },
     {
-      "type": "update",
-      "method": "PATCH",
-      "endpoint": "/",
+      "type": "edit",
+      "api_method": "PATCH",
+      "api_endpoint": "http://accounts:1930/api/accounts/{id}",
       "fields": [
         {
           "field": "agency_id",
@@ -118,11 +162,14 @@
       "options": [
 
       ]
-    },
+    }
+  ],
+
+  "actions": [
     {
       "type": "delete",
       "method": "DELETE",
-      "endpoint": "/"
+      "api_endpoint": "/"
     }
   ]
 }

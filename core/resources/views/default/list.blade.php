@@ -1,0 +1,4 @@
+@extends("app")
+
+-- filters
+-- table

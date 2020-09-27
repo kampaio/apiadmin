@@ -1,5 +1,6 @@
 <?php
 
+use ApiAdmin\ApiAdminManager;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,6 @@ Route::get('/', function () {
 });
 
 
-Route::any('resources/{path}', function ($path) {
-    dd($path);
+Route::any('resources/{path}', function ($path, ApiAdminManager $adminManager) {
+    dd($path, $adminManager->make($path));
 })->where('path', '.*');

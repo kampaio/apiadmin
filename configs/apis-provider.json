@@ -1,10 +1,10 @@
 {
   "providers": [
     {
-     "key" : "",
-     "name": "",
+     "key" : "account",
+     "name": "accountProvider",
      "provider": {
-        "base_path": "",
+        "base_path": "http://accounts:1930/api",
         "default_headers": {}
       }
     }
